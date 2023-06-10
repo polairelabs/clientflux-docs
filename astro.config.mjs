@@ -1,11 +1,12 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import cloudflare from "@astrojs/cloudflare";
 import sitemap from "@astrojs/sitemap";
 
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://docs.clientflux.io',
+  base: '/my-repo',
   integrations: [starlight({
     customCss: ['/src/assets/custom-styles.css', '@fontsource/roboto'],
     title: '',
@@ -29,7 +30,5 @@ export default defineConfig({
         directory: 'reference'
       }
     }]
-  }), sitemap()],
-  output: "server",
-  adapter: cloudflare({ mode: "directory" })
+  }), sitemap()]
 });
