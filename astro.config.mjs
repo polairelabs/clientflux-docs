@@ -3,7 +3,6 @@ import starlight from '@astrojs/starlight';
 import cloudflare from "@astrojs/cloudflare";
 import sitemap from "@astrojs/sitemap";
 
-import markdoc from "@astrojs/markdoc";
 
 // https://astro.build/config
 export default defineConfig({
@@ -30,7 +29,7 @@ export default defineConfig({
         directory: 'reference'
       }
     }]
-  }), sitemap(), markdoc()],
+  }), sitemap()],
   output: "server",
   adapter: cloudflare()
 });
