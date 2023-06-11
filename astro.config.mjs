@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://help.clientflux.io',
-  base: '/my-repo',
+  base: '',
   integrations: [starlight({
     customCss: ['/src/assets/custom-styles.css', '@fontsource/roboto'],
     title: '',
