@@ -30,5 +30,5 @@ export default defineConfig({
         directory: 'reference'
       }
     }]
-  }), sitemap()]
+  })]
 });
